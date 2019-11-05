@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Staatliches', cursive;
+}
+
+body {
+    background: #2C302E;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container span {
+    text-transform: uppercase;
+}
+
+.name {
+    text-align: center;
+    color: #A32066;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    animation: name 3s 1;
+}
+
+.title {
+    color: #8A7090;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    animation: title 5s 1;
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes name {
+    0% {
+        color: #2C302E;
+        margin-bottom: -3rem;
+    }
+    30% {
+        letter-spacing: 1.5rem;
+        margin-bottom: -3rem;
+    }
+    85% {
+        letter-spacing: 1rem;
+        margin-bottom: -3rem;
+    }
+}
+
+#particles-js {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
