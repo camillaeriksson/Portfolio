@@ -25,19 +25,20 @@ body {
 .name {
     text-align: center;
     color: #A32066;
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     letter-spacing: 1rem;
     margin-bottom: 1rem;
-    position: relative;
     animation: name 3s 1;
+    margin-left: 1rem;
 }
 
 .title {
     color: #8A7090;
-    font-size: 2rem;
+    font-size: 1rem;
     letter-spacing: 0.5rem;
     animation: title 5s 1;
+    margin-left: 0.5rem;
 }
 
 @keyframes title {
