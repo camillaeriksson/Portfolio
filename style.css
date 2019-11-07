@@ -4,11 +4,115 @@
     font-family: 'Staatliches', cursive;
 }
 
+html {
+    /* overflow-x: hidden; */
+}
+
 body {
     background: #2C302E;
     height: 100vh;
-    width: 100vw;
+    width: 100vw;  
+    /* overflow-x: hidden; */
+  
 }
+
+/* --- Nav ---*/
+body > nav {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    min-height: 10vh;
+    background-color:#A32066;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .nav_links {
+    position: absolute;
+    right: 0rem;
+    top: 10vh;
+    height: 50vh;
+    background-color: #A32066;
+    border-radius: 0 0 0 2rem;
+    display: flex !important; 
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+  }
+  
+  .nav_links li {
+    opacity: 0;
+    list-style: none;
+  }
+  
+  .nav_links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  .nav_links a:hover {
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+  }
+  
+  .burger {
+    cursor: pointer;
+    position: absolute;
+    right: 6vw;
+  }
+  
+  .burger div {
+    width: 1.6rem;
+    height: 0.15rem;
+    margin: 0.3rem;
+    background-color: rgb(233, 233, 233);
+    transition: all 0.3s ease;
+  }
+  
+  @keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(3.125rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+  }
+  
+  /* From hamburger to cross */
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-0.3rem,0.35rem);
+  
+  }
+  .toggle .line2 {
+    opacity: 0;
+  
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-0.3rem,-0.35rem);
+  }
+/*-- END NAV --*/  
 
 .container {
     position: absolute;
@@ -16,6 +120,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .container span {
@@ -30,6 +135,7 @@ body {
     letter-spacing: 1rem;
     margin-bottom: 1rem;
     animation: name 3s 1;
+    animation-fill-mode: forwards;
     margin-left: 1rem;
 }
 
@@ -38,7 +144,9 @@ body {
     font-size: 1rem;
     letter-spacing: 0.5rem;
     animation: title 5s 1;
+    animation-fill-mode: forwards;
     margin-left: 0.5rem;
+    z-index: 100;
 }
 
 @keyframes title {
@@ -66,6 +174,10 @@ body {
     85% {
         letter-spacing: 1rem;
         margin-bottom: -3rem;
+    }
+    100% {
+        letter-spacing: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
