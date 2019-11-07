@@ -5,29 +5,25 @@
     .title {
         font-size: 2rem;
     }
-    .nav_links {
-        display: flex !important;
-        animation: none;
-        transition: none;
+    .nav-links {
+        display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        position: absolute;
-        top: 0vh;
-        right: 55%;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
         height: 10vh;
+        margin-left: auto;
+        position: relative;
+        transition: none;
+        clip-path: none;
     }
 
-    .nav_links a {
-      letter-spacing: 0.1rem;
-      font-size: 1rem;
+    .hamburger {
+        display: none;
     }
-
-    .nav_links li {
-        opacity: 100;
-    }
-
-    .burger {
-      display: none;
+    .nav-links li {
+        opacity: 1;
+    
     }
 
   }
