@@ -8,6 +8,8 @@
     <title>Camilla Eriksson</title>
     <link rel="stylesheet" href="mobilestyle_home.css">
     <link rel="stylesheet" href="mobilestyle_about.css">
+    <link rel="stylesheet" href="mobilestyle_portfolio.css">
+    <link rel="stylesheet" href="mobilestyle_contact.css">
     <link rel="stylesheet" href="desktopstyles.css">
     <script defer src="script.js"></script>
     <script defer src="particles.js"></script>
@@ -47,16 +49,41 @@
         </div>
         <div class="contact">
             <div class="contact_content">
+                <!-- Animated form -->
+                <forms action="/onsubmit.php">
+                    <div class="flexed_container">
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">För- och efternamn</span>
+                            </label>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Företag</span>
+                            </label>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">E-post</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="submit_container">
+                        <input type="submit" value="SKICKA"><br>
+                    </div>
+                </forms>
+            </div>
+        </div>
+        <div class="portfolio">
+            <div class="portfolio_content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores quidem id dolorum
                     perspiciatis totam delectus, suscipit fuga numquam, amet inventore? Totam esse nobis et eaque,
                     quaerat
                     molestiae ducimus necessitatibus.</p>
             </div>
-        </div>
-        <div class="portfolio">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores quidem id dolorum
-                perspiciatis totam delectus, suscipit fuga numquam, amet inventore? Totam esse nobis et eaque, quaerat
-                molestiae ducimus necessitatibus.</p>
         </div>
     </main>
 </body>
