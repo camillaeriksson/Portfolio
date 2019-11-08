@@ -6,14 +6,16 @@
 
 body {
     background: #2C302E;
-    height: 90vh;
     width: 100vw;
 }
 
 nav {
-    height: 10vh;
+    height: 8vh;
+    width: 100%;
     background: #A32066;
-    position: relative;
+    position: fixed;
+    z-index: 100;
+
 }
 
 .line {
@@ -48,17 +50,18 @@ li a {
     align-items: center;
     flex-direction: column;
     font-size: 1.5rem;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
     transition: all 1s ease-out;
-    pointer-events: none;
 }
 
 .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
+    position: absolute;
 }
+
 
 .nav-links li {
     opacity: 0;
@@ -109,7 +112,6 @@ li.fade {
     letter-spacing: 0.5rem;
     animation: title 5s 1;
     margin-left: 0.5rem;
-    z-index: 100;
 }
 
 @keyframes title {
@@ -148,6 +150,10 @@ li.fade {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
+}
+
+.about {
+    height: 200rem;
 }

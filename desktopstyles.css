@@ -6,12 +6,9 @@
         font-size: 2rem;
     }
     .nav-links {
-        display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
         width: 40%;
-        height: 10vh;
+        height: 8vh;
         margin-left: auto;
         position: relative;
         transition: none;
@@ -23,7 +20,9 @@
     }
     .nav-links li {
         opacity: 1;
-    
+    }
+    a:hover {
+        color: #8A7090
     }
 
   }
