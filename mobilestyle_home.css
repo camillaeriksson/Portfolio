@@ -15,6 +15,7 @@ nav {
     background: #A32066;
     position: fixed;
     z-index: 100;
+    transition: none;
 
 }
 
@@ -59,7 +60,7 @@ li a {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
-    position: absolute;
+    position: relative;
 }
 
 
@@ -98,7 +99,7 @@ li.fade {
 .name {
     text-align: center;
     color: #A32066;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     letter-spacing: 1rem;
     margin-bottom: 1rem;
@@ -154,6 +155,8 @@ li.fade {
     width: 100vw;
 }
 
-.about {
-    height: 200rem;
+
+.portfolio{
+    height: 92vh;
+    width: 100vw;
 }
