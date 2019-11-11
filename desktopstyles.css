@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
     .name {
         font-size: 5rem;
     }
@@ -15,7 +15,6 @@
         transition: none;
         clip-path: none;
     }
-
     .hamburger {
         display: none;
     }
@@ -26,5 +25,7 @@
     a:hover {
         color: #8A7090
     }
-
-  }
+    .contact {
+        width: 55%;
+    }
+}

@@ -1,16 +1,19 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Staatliches', cursive;
 }
 
 body {
     background: #2C302E;
     width: 100vw;
+    height: 100vh;
+    font-family: 'Staatliches', cursive;
+    box-sizing: border-box;
 }
 
 html {
     width: 100vw;
+    height: 100vh;
 }
 
 nav {
