@@ -2,6 +2,21 @@ const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
+const controller = new ScrollMagic.Controller();
+
+const scene1 = new ScrollMagic.Scene({
+    triggerElement: ".contact"
+})
+    .setClassToggle(".contact", "show")
+    .addTo(controller);
+
+const scene2 = new ScrollMagic.Scene({
+    triggerElement: ".contact_heading",
+    triggerHook: 'onEnter', offset: 220
+})
+    .setClassToggle(".contact_heading", "show_heading")
+    .addTo(controller);
+
 hamburger.addEventListener("click", () => toggleLinks());
 
 links.forEach(link => link.addEventListener("click", () => toggleLinks()));
@@ -30,3 +45,4 @@ $('.portfolio_link').click(() => {
         scrollTop: $('.portfolio').offset().top - $('nav').height()
     }, 1000);
 });
+

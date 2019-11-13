@@ -9,6 +9,7 @@ body {
     height: 100vh;
     font-family: 'Staatliches', cursive;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html {

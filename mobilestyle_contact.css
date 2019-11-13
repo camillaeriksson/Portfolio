@@ -6,18 +6,30 @@
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
+    opacity: 0;
+    transition: 1s;
+}
+
+.contact.show {
+    opacity: 1;
+}
+
+.contact_heading {
+    color: #A32066;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    transform: translateX(20rem);
+    transition: 1s;
+}
+
+.contact_heading.show_heading {
+    transform: translateX(0);
 }
 
 .contact p {
     color: #A32066;
     font-size: 1.2rem;
     margin-bottom: 3rem;
-}
-
-.contact h1 {
-    color: #A32066;
-    letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
 }
 
 /* Animated Form */
