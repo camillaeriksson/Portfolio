@@ -17,6 +17,13 @@ const scene2 = new ScrollMagic.Scene({
     .setClassToggle(".contact_heading", "show_heading")
     .addTo(controller);
 
+const scene3 = new ScrollMagic.Scene({
+    triggerElement: ".contact_text",
+    triggerHook: 'onEnter', offset: 190
+})
+    .setClassToggle(".contact_text", "show_text")
+    .addTo(controller);
+
 hamburger.addEventListener("click", () => toggleLinks());
 
 links.forEach(link => link.addEventListener("click", () => toggleLinks()));

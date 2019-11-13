@@ -7,7 +7,8 @@
     text-align: center;
     margin: 0 auto;
     opacity: 0;
-    transition: 1s;
+    transition: 2s;
+    overflow-x: hidden;
 }
 
 .contact.show {
@@ -18,7 +19,7 @@
     color: #A32066;
     letter-spacing: 0.2rem;
     margin-bottom: 1rem;
-    transform: translateX(20rem);
+    transform: translateX(30rem);
     transition: 1s;
 }
 
@@ -26,10 +27,20 @@
     transform: translateX(0);
 }
 
-.contact p {
+.contact_text {
     color: #A32066;
     font-size: 1.2rem;
     margin-bottom: 3rem;
+    transform: translateX(-30rem);
+    transition: 1s;
+}
+
+.contact_text.show_text {
+    transform: translateX(0);
+}
+
+.contact a {
+    color: #A32066;
 }
 
 /* Animated Form */
