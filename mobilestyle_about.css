@@ -1,5 +1,5 @@
 .about {
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     background-color: white;
     display: flex;
@@ -12,6 +12,14 @@
     overflow-x: hidden;
 }
 
+.icons_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-around;
+    text-align: center;
+}
+
 .icon {
     width: 0rem;
     height: 5rem;
@@ -21,14 +29,6 @@
 
 .icon.show_icon {
     width: 5rem;
-}
-
-.icons_container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 95vw;
-    justify-content: space-around;
-    text-align: center;
 }
 
 .icons_container div {
@@ -45,8 +45,10 @@
 }
 
 .about_text {
-    width: 90vw;
+    width: 90%;
     text-align: center;
+    transform: translateX(-60rem);
+    transition: 2s;
 }
 
 .about_end {

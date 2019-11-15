@@ -16,10 +16,6 @@
     transition: 2s;
 }
 
-.show_heading {
-    transform: translateX(0);
-}
-
 .contact_text {
     color: #A32066;
     font-size: 1.2rem;
@@ -28,7 +24,7 @@
     transition: 2s;
 }
 
-.contact_text.show_text {
+.show_heading_and_text {
     transform: translateX(0);
 }
 
