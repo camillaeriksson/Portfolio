@@ -2,28 +2,21 @@
     display: flex;
     justify-content: center;
     width: 90%;
-    height: 92vh;
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
-    opacity: 0;
-    transition: 2s;
     overflow-x: hidden;
-}
-
-.contact.show {
-    opacity: 1;
 }
 
 .contact_heading {
     color: #A32066;
     letter-spacing: 0.2rem;
     margin-bottom: 1rem;
-    transform: translateX(30rem);
-    transition: 1s;
+    transform: translateX(50rem);
+    transition: 2s;
 }
 
-.contact_heading.show_heading {
+.show_heading {
     transform: translateX(0);
 }
 
@@ -31,8 +24,8 @@
     color: #A32066;
     font-size: 1.2rem;
     margin-bottom: 3rem;
-    transform: translateX(-30rem);
-    transition: 1s;
+    transform: translateX(-50rem);
+    transition: 2s;
 }
 
 .contact_text.show_text {
@@ -135,4 +128,15 @@
     100% {
         transform: rotate(5deg);
     }
+}
+
+.social_icons img {
+    width: 4rem;
+}
+
+.social_icons {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 5rem auto 5rem auto;
 }

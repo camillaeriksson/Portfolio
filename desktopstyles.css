@@ -28,4 +28,13 @@
     .contact {
         width: 55%;
     }
+    .about_text {
+        width: 50%;
+    }
+    .icons_container {
+        width: 60%;
+    }
+    .social_icons {
+        width: 50%;
+    }
 }
