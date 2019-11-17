@@ -33,7 +33,6 @@
 
 .icons_container div {
     width: 9rem;
-    font-size: 0.9rem;
 }
 
 .about_heading {
@@ -45,6 +44,7 @@
 }
 
 .about_text {
+    margin: 1.5rem 0 1.5rem 0;
     width: 90%;
     text-align: center;
     transform: translateX(-60rem);

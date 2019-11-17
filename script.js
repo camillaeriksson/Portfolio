@@ -81,3 +81,12 @@ function initScrollOnLinks() {
         }, 1000);
     });
 }
+
+const projectContent = document.querySelector(".project_content");
+
+projectContent.addEventListener("click", () => togglePic());
+
+function togglePic() {
+    projectContent.classList.toggle("show_project_content")
+}
+

@@ -15,8 +15,8 @@
     <script defer src="script.js"></script>
     <script defer src="particles.js"></script>
     <script defer src="app.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    <script defer src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
 </head>
@@ -76,18 +76,26 @@
         </div>
         <div class="about_end"></div>
         <div class="portfolio">
-            <div class="portfolio_content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores quidem id dolorum
-                    perspiciatis totam delectus, suscipit fuga numquam, amet inventore? Totam esse nobis et eaque,
-                    quaerat
-                    molestiae ducimus necessitatibus.</p>
+            <h1 class="portfolio_heading">Tidigare projekt</h1>
+            <p class="portfolio_text">Här kan du se ett urval av mina tidigare projekt som jag utfört inom mina studier.
+            </p>
+            <div class="project_container1">
+                <div class="project_content">
+                    <p>Interaktivt textbaserat spel.</p>
+                    <button><a href="https://camillaeriksson.github.io/LostInTheWoods/">Demo</a></button>
+                    <button><a href="https://github.com/camillaeriksson/LostInTheWoods">GitHub repo</a></button>
+                </div>
+            </div>
+            <div class="project_container2">
             </div>
         </div>
         <div class="contact">
             <h1 class="contact_heading">Hör av dig!</h1>
             <p class="contact_text">Om du undrar något, vill jobba med mig eller bara säga hej så kan du
                 skicka
-                ett e-mail till <a href="mailto: abc@example.com">camilla.eriksson@medieinstitutet.se</a> alternativt
+                ett e-mail till <a
+                    href="mailto: camilla.eriksson@medieinstitutet.se">camilla.eriksson@medieinstitutet.se</a>
+                alternativt
                 skicka ditt meddelande här:</p>
             <!-- Animated form -->
             <forms action="/onsubmit.php">
@@ -114,9 +122,15 @@
                 </div>
             </forms>
             <div class="social_icons">
-                <img src="./Icons/facebook.png" alt="facebook">
-                <img src="./Icons/github.png" alt="github">
-                <img src="./Icons/linkedin.png" alt="linkedin">
+                <a href="https://www.facebook.com/CamillaErikssonFrontEndDeveloper/" target="_blank">
+                    <img src="./Icons/facebook.png" alt="facebook">
+                </a>
+                <a href="https://github.com/camillaeriksson" target="_blank">
+                    <img src="./Icons/github.png" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/camilla-eriksson-1551175a/" target="_blank">
+                    <img src="./Icons/linkedin.png" alt="linkedin">
+                </a>
             </div>
         </div>
     </main>

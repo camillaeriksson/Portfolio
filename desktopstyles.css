@@ -30,9 +30,13 @@
     }
     .about_text {
         width: 50%;
+        font-size: 1.5rem;
     }
     .icons_container {
         width: 60%;
+    }
+    .icon_container div {
+        font-size: 5rem;
     }
     .social_icons {
         width: 50%;
