@@ -44,6 +44,20 @@ function initScrollMagicScene() {
     })
         .setClassToggle(".contact_text", "show_heading_and_text")
         .addTo(controller);
+
+    const scene7 = new ScrollMagic.Scene({
+        triggerElement: ".portfolio_heading",
+        triggerHook: 'onEnter', offset: 150
+    })
+        .setClassToggle(".portfolio_heading", "show_heading_and_text")
+        .addTo(controller);
+
+    const scene8 = new ScrollMagic.Scene({
+        triggerElement: ".portfolio_text",
+        triggerHook: 'onEnter', offset: 150
+    })
+        .setClassToggle(".portfolio_text", "show_heading_and_text")
+        .addTo(controller);
 }
 
 function initNavbarEvents() {
@@ -82,11 +96,14 @@ function initScrollOnLinks() {
     });
 }
 
-const projectContent = document.querySelector(".project_content");
+const projectContent = document.querySelectorAll(".project_content");
 
-projectContent.addEventListener("click", () => togglePic());
 
-function togglePic() {
-    projectContent.classList.toggle("show_project_content")
+projectContent.forEach(project => project.addEventListener("click", toggleContent));
+
+function toggleContent(event) {
+
+    event.target.classList.toggle("show_project_content");
+
 }
 

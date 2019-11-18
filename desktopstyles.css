@@ -28,6 +28,9 @@
     .contact {
         width: 55%;
     }
+    .portfolio {
+        width: 55%;
+    }
     .about_text {
         width: 50%;
         font-size: 1.5rem;
@@ -40,5 +43,11 @@
     }
     .social_icons {
         width: 50%;
+    }
+    .portfolio_heading {
+        font-size: 4rem;
+    }
+    .portfolio_text {
+        font-size: 1.5rem;
     }
 }

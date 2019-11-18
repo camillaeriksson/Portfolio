@@ -4,19 +4,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .portfolio_heading {
     color: #A32066;
     letter-spacing: 0.2rem;
     margin: 2rem 0 1rem 0;
+    transform: translateX(50rem);
+    transition: 2s;
 }
 
 .portfolio_text {
     color: #A32066;
     font-size: 1.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     width: 90%;
+    transform: translateX(-70rem);
+    transition: 2s;
     text-align: center;
 }
 
@@ -35,6 +41,16 @@
     height: 17rem;
     border-radius: 0.7rem;
     transition: 0.5s;
+    margin: 1rem 0 1rem 0;
+}
+
+.project_container3 {
+    background-image: url(./Pics/portfolio.jpg);
+    width: 17rem;
+    height: 17rem;
+    border-radius: 0.7rem;
+    transition: 0.5s;
+    margin: 1rem 0 1rem 0;
 }
 
 button {
@@ -43,12 +59,18 @@ button {
     background: #8A7090;
     font-family: 'Staatliches', cursive;
     border: solid black 0.1rem;
+    outline: none;
+    margin-top: 0.5rem;
 }
 
 .portfolio a {
     text-decoration: none;
     color: #2C302E;
-    cursor: pointer;
+    background: #8A7090;
+}
+
+.portfolio a:hover {
+    color: #A32066;
 }
 
 .project_content {
@@ -63,16 +85,15 @@ button {
 }
 
 .project_content p {
-    margin-bottom: 1rem;
     color: #2C302E;
+    font-size: 1.2rem;
+    width: 90%;
+    text-align: center;
+    pointer-events: none;
 }
 
 .show_project_content {
     opacity: 1;
     background-image: url(./Pics/image_clicked.jpg);
     border-radius: 0.7rem;
-}
-
-.toggle_button {
-    opacity: 1;
 }
