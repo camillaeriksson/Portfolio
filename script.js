@@ -101,9 +101,19 @@ const projectContent = document.querySelectorAll(".project_content");
 
 projectContent.forEach(project => project.addEventListener("click", toggleContent));
 
+/**
+ * asdahjsgdhjgafsd
+ * @param {MouseEvent} event 
+ */
 function toggleContent(event) {
+    /** @type {HTMLDivElement} from event target */
+    const divElement = event.target
 
-    event.target.classList.toggle("show_project_content");
+    if (divElement.classList.contains('show_project_content')) {
+        divElement.classList.remove("show_project_content");
+    } else {
+        divElement.classList.add("show_project_content");
+    }
 
 }
 

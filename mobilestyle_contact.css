@@ -1,6 +1,7 @@
 .contact {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 90%;
     flex-direction: column;
     text-align: center;
@@ -9,6 +10,7 @@
 }
 
 .contact_heading {
+    margin-top: 4rem;
     color: #A32066;
     letter-spacing: 0.2rem;
     margin-bottom: 1rem;
@@ -106,8 +108,8 @@
 /* Button form */
 
 .submit-arrow {
-    color: #A32066;
-    animation: wiggle 0.1s infinite alternate;
+    color: #8A7090;
+    animation: wiggle 1s infinite alternate;
 }
 
 .submit_container button {
@@ -119,10 +121,13 @@
 
 @keyframes wiggle {
     0% {
-        transform: rotate(-5deg);
+        transform: rotate(-10deg);
     }
-    100% {
-        transform: rotate(5deg);
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
     }
 }
 

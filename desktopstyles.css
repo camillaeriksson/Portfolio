@@ -25,10 +25,7 @@
     a:hover {
         color: #8A7090
     }
-    .contact {
-        width: 55%;
-    }
-    .portfolio {
+    .contact, .portfolio {
         width: 55%;
     }
     .about_text {
@@ -44,10 +41,13 @@
     .social_icons {
         width: 50%;
     }
-    .portfolio_heading {
+    .portfolio_heading, .contact_heading {
         font-size: 4rem;
     }
-    .portfolio_text {
+    .portfolio_text, .contact_text {
         font-size: 1.5rem;
+    }
+    .project_container {
+        max-width: 80%;
     }
 }
