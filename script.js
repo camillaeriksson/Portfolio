@@ -1,14 +1,23 @@
-window.addEventListener('load', initPage)
+/**
+ * Starts the initPage function when page is fully loaded
+ */
+window.addEventListener('load', initPage);
 
+/**
+ * Set ups the functions that will run when the page is fully loaded
+ */
 function initPage() {
-    initScrollMagicScene()
-    initNavbarEvents()
-    initScrollOnLinks()
+    initScrollMagicScene();
+    initNavbarEvents();
+    initScrollOnLinks();
+    initProjectPictureChange();
 }
 
+/**
+ * Function for making elements appear when scrolling down the page
+ */
 function initScrollMagicScene() {
     const controller = new ScrollMagic.Controller();
-
 
     const scene1 = new ScrollMagic.Scene({
         triggerElement: ".icon",
@@ -60,6 +69,9 @@ function initScrollMagicScene() {
         .addTo(controller);
 }
 
+/**
+ * Adds click function to burger and toggles class to show and hide links in nav
+ */
 function initNavbarEvents() {
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
@@ -76,6 +88,9 @@ function initNavbarEvents() {
     }
 }
 
+/**
+ * Scrolls down to the correct area of the page when clicking links
+ */
 function initScrollOnLinks() {
     $('.about_link').click(() => {
         $('html, body').animate({
@@ -96,24 +111,25 @@ function initScrollOnLinks() {
     });
 }
 
-const projectContent = document.querySelectorAll(".project_content");
+function initProjectPictureChange() {
 
+    const projectContent = document.querySelectorAll(".project_content");
 
-projectContent.forEach(project => project.addEventListener("click", toggleContent));
+    projectContent.forEach(project => project.addEventListener("click", toggleContent));
 
-/**
- * asdahjsgdhjgafsd
- * @param {MouseEvent} event 
- */
-function toggleContent(event) {
-    /** @type {HTMLDivElement} from event target */
-    const divElement = event.target
+    /**
+     * Event from mouse click
+     * @param {MouseEvent} event 
+     */
+    function toggleContent(event) {
+        /** @type {HTMLDivElement} from event target */
+        const divElement = event.target
 
-    if (divElement.classList.contains('show_project_content')) {
-        divElement.classList.remove("show_project_content");
-    } else {
-        divElement.classList.add("show_project_content");
+        if (divElement.classList.contains('show_project_content')) {
+            divElement.classList.remove("show_project_content");
+        } else {
+            divElement.classList.add("show_project_content");
+        }
+
     }
-
 }
-
