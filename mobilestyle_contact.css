@@ -36,7 +36,7 @@
 
 /* Animated Form */
 
-forms {
+form {
     width: 100%;
 }
 
@@ -58,7 +58,7 @@ forms {
     border: none;
     outline: none;
     background: #2C302E;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .form label {
