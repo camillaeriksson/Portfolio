@@ -15,6 +15,7 @@ function initPage() {
 
 /**
  * Function for making elements appear when scrolling down the page
+ * with the ScrollMagic library
  */
 function initScrollMagicScene() {
     const controller = new ScrollMagic.Controller();
@@ -70,7 +71,7 @@ function initScrollMagicScene() {
 }
 
 /**
- * Adds click function to burger and toggles class to show and hide links in nav
+ * Adds click function to burger and toggles class on links in nav to show/hide them
  */
 function initNavbarEvents() {
     const hamburger = document.querySelector(".hamburger");
@@ -111,6 +112,9 @@ function initScrollOnLinks() {
     });
 }
 
+/**
+ * Changes the class on the pictures when they are clicked
+ */
 function initProjectPictureChange() {
 
     const projectContent = document.querySelectorAll(".project_content");

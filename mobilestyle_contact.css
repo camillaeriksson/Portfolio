@@ -36,6 +36,10 @@
 
 /* Animated Form */
 
+forms {
+    width: 100%;
+}
+
 .form {
     width: 100%;
     position: relative;
