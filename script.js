@@ -1,10 +1,10 @@
 /**
- * Starts the initPage function when page is fully loaded
+ * Runs the initPage function when page is fully loaded
  */
 window.addEventListener('load', initPage);
 
 /**
- * Set ups the functions that will run when the page is fully loaded
+ * Runs the functions that will run when the page is fully loaded
  */
 function initPage() {
     initScrollMagicScene();
@@ -74,9 +74,13 @@ function initScrollMagicScene() {
  * Adds click function to burger and toggles class on links in nav to show/hide them
  */
 function initNavbarEvents() {
+    /** @type {HTMLDivElement} div for hamburger in nav */
     const hamburger = document.querySelector(".hamburger");
+    /** @type {HTMLDivElement} div for the links in nav */
     const navLinks = document.querySelector(".nav-links");
+    /** @type {HTMLLinkElement} links in nav */
     const links = document.querySelectorAll(".nav-links li");
+
     hamburger.addEventListener("click", () => toggleLinks());
 
     links.forEach(link => link.addEventListener("click", () => toggleLinks()));
@@ -116,7 +120,7 @@ function initScrollOnLinks() {
  * Changes the class on the pictures when they are clicked
  */
 function initProjectPictureChange() {
-
+    /** @type {HTMLDivElement} div for projects in portfolio */
     const projectContent = document.querySelectorAll(".project_content");
 
     projectContent.forEach(project => project.addEventListener("click", toggleContent));
@@ -134,6 +138,5 @@ function initProjectPictureChange() {
         } else {
             divElement.classList.add("show_project_content");
         }
-
     }
 }
