@@ -1,171 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Camilla Eriksson</title>
-    <link rel="stylesheet" href="mobilestyle_home.css">
-    <link rel="stylesheet" href="mobilestyle_about.css">
-    <link rel="stylesheet" href="mobilestyle_portfolio.css">
-    <link rel="stylesheet" href="mobilestyle_contact.css">
-    <link rel="stylesheet" href="desktopandtabletstyles.css">
-    <script src="https://kit.fontawesome.com/89d03a09dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mobilestyle_home.css" />
+    <link rel="stylesheet" href="mobilestyle_about.css" />
+    <link rel="stylesheet" href="mobilestyle_portfolio.css" />
+    <link rel="stylesheet" href="mobilestyle_contact.css" />
+    <link rel="stylesheet" href="desktopandtabletstyles.css" />
+    <script
+      src="https://kit.fontawesome.com/89d03a09dd.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="script.js"></script>
     <script defer src="particles.js"></script>
     <script defer src="app.js"></script>
-    <script defer src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-</head>
+    <script
+      defer
+      src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    ></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hotjar Tracking Code for https://camillaeriksson.github.io/Portfolio/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 1984824, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
 
-<body>
+  <body>
     <!-- Nav bar-->
     <nav>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <ul class="nav-links">
-            <li><a class="about_link">Om mig</a></li>
-            <li><a class="portfolio_link">Portfolio</a></li>
-            <li><a class="contact_link">Kontakt</a></li>
-        </ul>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a class="about_link">Om mig</a></li>
+        <li><a class="portfolio_link">Portfolio</a></li>
+        <li><a class="contact_link">Kontakt</a></li>
+      </ul>
     </nav>
     <main>
-        <!-- Front page content-->
-        <div id="particles-js">
-            <div class="name_container">
-                <span class="name">Camilla Eriksson</span>
-                <span class="title">Front End Developer</span>
-                <div class="arrow">
-                    <i class="fas fa-chevron-circle-down fa-2x"></i>
-                </div>
-            </div>
+      <!-- Front page content-->
+      <div id="particles-js">
+        <div class="name_container">
+          <span class="name">Camilla Eriksson</span>
+          <span class="title">Front End Developer</span>
+          <div class="arrow">
+            <i class="fas fa-chevron-circle-down fa-2x"></i>
+          </div>
         </div>
-        <!-- About section-->
-        <div class="about">
-            <h1 class="about_heading">Hej!</h1>
-            <p class="about_text">
-                Jag är en blivande webbutvecklare baserad i Göteborg. Jag har så länge jag kan minnas haft ett
-                stort intresse för form, färg, illustrationer och att skapa saker. Jag började mitt yrkesliv som
-                forograf och har sedan jobbat i Adobe-programmen med design på olika sätt. Därför var det ett naturligt
-                steg att läsa till Front End Developer på Medieinstitutet för att lära mig att skapa dynamiska,
-                responsiva användarupplevelser.
+      </div>
+      <!-- About section-->
+      <div class="about">
+        <h1 class="about_heading">Hej!</h1>
+        <p class="about_text">
+          Jag är en blivande webbutvecklare baserad i Göteborg. Jag har så länge
+          jag kan minnas haft ett stort intresse för form, färg, illustrationer
+          och att skapa saker. Jag började mitt yrkesliv som forograf och har
+          sedan jobbat i Adobe-programmen med design på olika sätt. Därför var
+          det ett naturligt steg att läsa till Front End Developer på
+          Medieinstitutet för att lära mig att skapa dynamiska, responsiva
+          användarupplevelser.
+        </p>
+        <div class="icons_container">
+          <div>
+            <img class="icon" src="./Icons/responsive.png" />
+            <h3>Responsivt</h3>
+            <p>Mina layouter fungerar på alla skärmar, både stora och små.</p>
+          </div>
+          <div>
+            <img class="icon" src="./Icons/dynamic.png" />
+            <h3>Dynamiskt</h3>
+            <p>
+              Statiska webbsidor kan lätt bli tråkiga. Liv och rörelse fångar
+              intresse.
             </p>
-            <div class="icons_container">
-                <div>
-                    <img class="icon" src="./Icons/responsive.png">
-                    <h3>Responsivt</h3>
-                    <p>Mina layouter fungerar på alla skärmar, både stora och små.</p>
-                </div>
-                <div>
-                    <img class="icon" src="./Icons/dynamic.png">
-                    <h3>Dynamiskt</h3>
-                    <p>Statiska webbsidor kan lätt bli tråkiga. Liv och rörelse fångar intresse.</p>
-                </div>
-                <div><img class="icon" src="./Icons/fast.png">
-                    <h3>Hastighet</h3>
-                    <p>Hög prioritet på korta laddningstider och interaktion fri från lagg.</p>
-                </div>
-                <div><img class="icon" src="./Icons/uxui.png">
-                    <h3>Användarvänligt</h3>
-                    <p>Lättanvända, tydliga sidor skapta efter användares behov.</p>
-                </div>
-            </div>
-        </div>
-        <div class="about_end"></div>
-        <!-- Portfolio content -->
-        <div class="portfolio">
-            <h1 class="portfolio_heading">Tidigare projekt</h1>
-            <p class="portfolio_text">Här kan du se ett urval av mina tidigare projekt som jag utfört inom mina studier.
-                Då jag är under utbildning jobbar jag ständigt för att fylla på min protfolio.
+          </div>
+          <div>
+            <img class="icon" src="./Icons/fast.png" />
+            <h3>Hastighet</h3>
+            <p>
+              Hög prioritet på korta laddningstider och interaktion fri från
+              lagg.
             </p>
-            <div class="project_container">
-                <div class="project_container1">
-                    <div class="project_content">
-                        <p>Nummergissningsspel med olika svårighetsgrader.</p>
-                        <button><a href="https://github.com/camillaeriksson/Quizz-app" target="_blank">Demo</a></button>
-                        <button><a href="https://camillaeriksson.github.io/Quizz-app/" target="_blank">GitHub
-                                repo</a></button>
-                    </div>
-                </div>
-                <div class="project_container2">
-                    <div class="project_content">
-                        <p>Spel skapat med TypeScript och P5.</p>
-                        <button><a href="https://lisa-bee.github.io/FlowerGrow/" target="_blank">Demo</a></button>
-                        <button><a href="https://github.com/lisa-bee/FlowerGrow" target="_blank">GitHub
-                                repo</a></button>
-                    </div>
-                </div>
-                <div class="project_container3">
-                    <div class="project_content">
-                        <p>Min personliga portfolio.</p>
-                        <button><a href="https://camillaeriksson.github.io/Portfolio/" target="_blank">Demo</a></button>
-                        <button><a href="https://github.com/camillaeriksson/Portfolio" target="_blank">GitHub
-                                repo</a></button>
-                    </div>
-                </div>
-                <div class="project_container4">
-                    <div class="project_content">
-                        <p>Hemsida om Pokémons skapat med React och TypeScript.</p>
-                        <button><a href="https://serene-ritchie-0360d7.netlify.com/" target="_blank">Demo</a></button>
-                        <button><a href="https://github.com/camillaeriksson/miniproject-pokemon" target="_blank">GitHub
-                                repo</a></button>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div>
+            <img class="icon" src="./Icons/uxui.png" />
+            <h3>Användarvänligt</h3>
+            <p>Lättanvända, tydliga sidor skapta efter användares behov.</p>
+          </div>
         </div>
-        <!-- Contant content -->
-        <div class="contact">
-            <h1 class="contact_heading">Hör av dig!</h1>
-            <p class="contact_text">Om du undrar något, vill jobba med mig eller bara säga hej så kan du
-                skicka
-                ett e-mail till <a
-                    href="mailto: camilla.eriksson@medieinstitutet.se">camilla.eriksson@medieinstitutet.se</a>
-                alternativt
-                skicka ditt meddelande här:</p>
-            <!-- Animated form -->
-            <form action="/onsubmit.php">
-                <div class="form">
-                    <input type="text" id="name" name="user_name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">För- och efternamn</span>
-                    </label>
-                </div>
-                <div class="form">
-                    <input type="email" id="mail" name="user_mail" autocomplete="off" required />
-                    <label for="mail" class="label-name">
-                        <span class="content-name">E-post</span>
-                    </label>
-                </div>
-                <div class="form">
-                    <input type="text" id="message" name="message" autocomplete="off" required />
-                    <label for="message" class="label-name">
-                        <span class="content-name">Meddelande</span>
-                    </label>
-                </div>
-                <div class="submit_container">
-                    <button><i class="fas fa-share submit-arrow fa-3x"></i></button>
-                </div>
-            </form>
-            <!-- Social icons section -->
-            <div class="social_icons">
-                <a href="https://www.facebook.com/CamillaErikssonFrontEndDeveloper/" target="_blank">
-                    <img src="./Icons/facebook.png" alt="facebook">
-                </a>
-                <a href="https://github.com/camillaeriksson" target="_blank">
-                    <img src="./Icons/github.png" alt="github">
-                </a>
-                <a href="https://www.linkedin.com/in/camilla-eriksson-1551175a/" target="_blank">
-                    <img src="./Icons/linkedin.png" alt="linkedin">
-                </a>
+      </div>
+      <div class="about_end"></div>
+      <!-- Portfolio content -->
+      <div class="portfolio">
+        <h1 class="portfolio_heading">Tidigare projekt</h1>
+        <p class="portfolio_text">
+          Här kan du se ett urval av mina tidigare projekt som jag utfört inom
+          mina studier. Då jag är under utbildning jobbar jag ständigt för att
+          fylla på min protfolio.
+        </p>
+        <div class="project_container">
+          <div class="project_container1">
+            <div class="project_content">
+              <p>Nummergissningsspel med olika svårighetsgrader.</p>
+              <button>
+                <a
+                  href="https://github.com/camillaeriksson/Quizz-app"
+                  target="_blank"
+                  >Demo</a
+                >
+              </button>
+              <button>
+                <a
+                  href="https://camillaeriksson.github.io/Quizz-app/"
+                  target="_blank"
+                  >GitHub repo</a
+                >
+              </button>
             </div>
+          </div>
+          <div class="project_container2">
+            <div class="project_content">
+              <p>Spel skapat med TypeScript och P5.</p>
+              <button>
+                <a href="https://lisa-bee.github.io/FlowerGrow/" target="_blank"
+                  >Demo</a
+                >
+              </button>
+              <button>
+                <a href="https://github.com/lisa-bee/FlowerGrow" target="_blank"
+                  >GitHub repo</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="project_container3">
+            <div class="project_content">
+              <p>Min personliga portfolio.</p>
+              <button>
+                <a
+                  href="https://camillaeriksson.github.io/Portfolio/"
+                  target="_blank"
+                  >Demo</a
+                >
+              </button>
+              <button>
+                <a
+                  href="https://github.com/camillaeriksson/Portfolio"
+                  target="_blank"
+                  >GitHub repo</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="project_container4">
+            <div class="project_content">
+              <p>Hemsida om Pokémons skapat med React och TypeScript.</p>
+              <button>
+                <a
+                  href="https://serene-ritchie-0360d7.netlify.com/"
+                  target="_blank"
+                  >Demo</a
+                >
+              </button>
+              <button>
+                <a
+                  href="https://github.com/camillaeriksson/miniproject-pokemon"
+                  target="_blank"
+                  >GitHub repo</a
+                >
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- Contant content -->
+      <div class="contact">
+        <h1 class="contact_heading">Hör av dig!</h1>
+        <p class="contact_text">
+          Om du undrar något, vill jobba med mig eller bara säga hej så kan du
+          skicka ett e-mail till
+          <a href="mailto: camilla.eriksson@medieinstitutet.se"
+            >camilla.eriksson@medieinstitutet.se</a
+          >
+          alternativt skicka ditt meddelande här:
+        </p>
+        <!-- Animated form -->
+        <form action="/onsubmit.php">
+          <div class="form">
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              autocomplete="off"
+              required
+            />
+            <label for="name" class="label-name">
+              <span class="content-name">För- och efternamn</span>
+            </label>
+          </div>
+          <div class="form">
+            <input
+              type="email"
+              id="mail"
+              name="user_mail"
+              autocomplete="off"
+              required
+            />
+            <label for="mail" class="label-name">
+              <span class="content-name">E-post</span>
+            </label>
+          </div>
+          <div class="form">
+            <input
+              type="text"
+              id="message"
+              name="message"
+              autocomplete="off"
+              required
+            />
+            <label for="message" class="label-name">
+              <span class="content-name">Meddelande</span>
+            </label>
+          </div>
+          <div class="submit_container">
+            <button><i class="fas fa-share submit-arrow fa-3x"></i></button>
+          </div>
+        </form>
+        <!-- Social icons section -->
+        <div class="social_icons">
+          <a
+            href="https://www.facebook.com/CamillaErikssonFrontEndDeveloper/"
+            target="_blank"
+          >
+            <img src="./Icons/facebook.png" alt="facebook" />
+          </a>
+          <a href="https://github.com/camillaeriksson" target="_blank">
+            <img src="./Icons/github.png" alt="github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/camilla-eriksson-1551175a/"
+            target="_blank"
+          >
+            <img src="./Icons/linkedin.png" alt="linkedin" />
+          </a>
+        </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
